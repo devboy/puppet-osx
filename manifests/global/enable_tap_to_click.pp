@@ -14,15 +14,15 @@ class osx::global::enable_tap_to_click {
     user   => $::boxen_user;
   }
 
-  boxen::osx_defaults { 'Enable tap to click on login screen':
-    ensure => present,
-    host   => 'currentHost',
-    domain => 'NSGlobalDomain',
-    key    => 'Clicking',
-    value  => 1,
-    type   => int,
-    user   => $::boxen_user;
-  }
+  #boxen::osx_defaults { 'Enable tap to click on login screen':
+  #  ensure => present,
+  #  host   => 'currentHost',
+  #  domain => 'NSGlobalDomain',
+  #  key    => 'Clicking',
+  #  value  => 1,
+  #  type   => int,
+  #  user   => $::boxen_user;
+  #}
 
   boxen::osx_defaults { 'Enable tap to click for user':
     ensure => present,
