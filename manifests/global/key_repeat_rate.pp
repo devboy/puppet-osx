@@ -1,5 +1,5 @@
 
-define osx::global::key_repeat_rate($rate = 0) {
+class osx::global::key_repeat_rate($rate = 0) {
   boxen::osx_defaults { 'key repeat rate':
     ensure => present,
     domain => 'NSGlobalDomain',
