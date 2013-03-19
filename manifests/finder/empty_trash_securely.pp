@@ -1,4 +1,8 @@
-
+# Public: Securely Empty Trash
+#
+# Examples
+#
+# include osx::finder::empty_trash_securely
 class osx::finder::empty_trash_securely {
   include osx::finder
 

@@ -1,4 +1,8 @@
-
+# Public: Unhides Library directory
+#
+# Examples
+#
+# include osx::finder::unhide_library
 class osx::finder::unhide_library {
   $home = "/Users/$::boxen_user"
 

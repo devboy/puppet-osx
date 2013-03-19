@@ -1,4 +1,8 @@
-
+# Public: Show mounted media on the desktop
+#
+# Examples
+#
+# include osx::finder::show_removable_media_on_desktop
 class osx::finder::show_removable_media_on_desktop {
   include osx::finder
 

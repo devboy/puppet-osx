@@ -1,4 +1,8 @@
-
+# Public: Show mounted servers on the desktop
+#
+# Examples
+#
+# include osx::finder::show_mounted_servers_on_desktop 
 class osx::finder::show_mounted_servers_on_desktop {
   include osx::finder
 
