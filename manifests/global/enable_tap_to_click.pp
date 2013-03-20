@@ -16,7 +16,7 @@ class osx::global::enable_tap_to_click {
 
   boxen::osx_defaults { 'Enable tap to click on login screen':
     ensure => present,
-    host   => 'currentHost',
+    # host   => 'currentHost',
     domain => 'NSGlobalDomain',
     key    => 'Clicking',
     value  => 1,
