@@ -4,30 +4,13 @@
 #
 #   include osx::global::enable_tap_to_click
 class osx::global::enable_tap_to_click {
-
-  boxen::osx_defaults { 'Enable tap to click on bluetooth trackpad':
+  boxen::osx_defaults { 'Enable tap to click on tackpad':
     ensure => present,
-    domain => 'com.apple.driver.AppleBluetoothMultitouch.trackpad',
-    key    => 'Clicking',
-    value  => true,
-    type   => bool,
-    user   => $::boxen_user;
-  }
-
-  #boxen::osx_defaults { 'Enable tap to click on login screen':
-  #  ensure => present,
-  #  host   => 'currentHost',
-  #  domain => 'NSGlobalDomain',
-  #  key    => 'Clicking',
-  #  value  => 1,
-  #  user   => $::boxen_user;
-  #}
-
-  boxen::osx_defaults { 'Enable tap to click for user':
-    ensure => present,
+    host   => 'currentHost',
     domain => 'NSGlobalDomain',
-    key    => 'Clicking',
+    key    => 'com.apple.mouse.tapBehavior',
     value  => 1,
+    type   => int,
     user   => $::boxen_user;
   }
 }
