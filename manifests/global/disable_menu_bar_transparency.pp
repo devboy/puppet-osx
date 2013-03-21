@@ -1,10 +1,10 @@
-# Public: Disables key press and hold popover
+# Public: Disables menu bar transparency
 #
 # Examples
 #
-# include osx::global::disable_key_press_and_hold
-class osx::global::disable_key_press_and_hold {
-  boxen::osx_defaults { 'Disable key press and hold popover':
+# include osx::global::disable_menu_bar_transparency
+class osx::global::disable_menu_bar_transparency {
+  boxen::osx_defaults { 'Disables menu bar transparency':
     ensure => present,
     domain => 'NSGlobalDomain',
     key    => 'ApplePressAndHoldEnabled',
