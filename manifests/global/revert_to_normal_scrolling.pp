@@ -8,7 +8,7 @@ class osx::global::revert_to_normal_scrolling {
     ensure => present,
     domain => 'NSGlobalDomain',
     key    => 'com.apple.swipescrolldirection',
-    value  => false,
+    value  => NO,
     type   => bool,	
     user   => $::boxen_user;
   }
